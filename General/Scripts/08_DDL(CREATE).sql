@@ -32,7 +32,7 @@ SELECT * FROM USER_TABLES;
 -- 1. 테이블 생성하기
 -- 테이블이란?
 -- 행(row)과 열(column)으로 구성되는 가장 기본적인 데이터베이스 객체
--- 데이터 배이스 내에서 모든 데이터는 테이블을 통해서 저장된다.
+-- 데이터 베이스 내에서 모든 데이터는 테이블을 통해서 저장된다.
 
 
 -- [표현식] 
@@ -76,12 +76,12 @@ SELECT * FROM USER_TABLES;
 
 /* *** MEMBER 테이블 설계 ***
  * 
- * 					  컬럼명					/			자료형(크기)
- * 아이디  		: MEMBER_ID 		/		VARCHAR2(20BYTE)
- * 비밀번호		: MEMBER_PW			/		VARCHAR2(20BYTE)
- * 이름				: MEMBER_NAME 	/		VARCHAR2(15BYTE) (한글 5자까지)
- * 주민등록번호 : MEMBER_SSN		/		CHAR(14BYTE) (-포함) 
- * 가입일			: ENROLL_DATE		/		DATE
+ * 					  컬럼명						/			자료형(크기)
+ * 아이디  	   : MEMBER_ID 			/		VARCHAR2(20BYTE)
+ * 비밀번호	   : MEMBER_PW			/		VARCHAR2(20BYTE)
+ * 이름			 : MEMBER_NAME	 	/		VARCHAR2(15BYTE) (한글 5자까지)
+ * 주민등록번호 : MEMBER_SSN			/		CHAR(14BYTE) (-포함) 
+ * 가입일			 : ENROLL_DATE		/		DATE
  */
 
 CREATE TABLE "MEMBER"( -- "MEMBER" : "" 안에 쓴 문자 형식 그대로 
@@ -211,7 +211,7 @@ VALUES(NULL, NULL, NULL, NULL, NULL, '010-1234-5678', 'hong123@kh.or.kr');
 -- ORA-01400: cannot insert NULL into ("KH"."USER_USED_NN"."USER_NO")
 
 
-SELECT * FROM USER_USED_NN; -- 오류 안난 1행만 사입됨을 확인
+SELECT * FROM USER_USED_NN; -- 오류 안난 1행만 삽입됨을 확인
 --------------------------------------------------------------------------------------------------------------------
 
 
